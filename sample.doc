@@ -1,0 +1,13 @@
+Hai. It is a sample file to play around the git. I want to edit something and upload again to track a versioning.
+Now I created ssh key through ssh-keygen.
+then cat public key
+paste at add ssh key in git hub
+I took took to make authentication page and should give our password of github
+Then go to git bash
+disconnet and remove your remote by git remote rm origin
+go to github an copy code of ssh link
+go to gitbash
+command as 
+git remote add origin git@github.com:sasitharan96/git-.....
+All set mydear.
+Now want to chech versioning
