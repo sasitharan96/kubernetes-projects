@@ -7,12 +7,12 @@ spec:
   - name: html
     emptyDir: {}
   containers:
-  - name: 1st Container
+  - name: nginx
     image: nginx
     volumeMounts:
     - name: html
       mountPath: /usr/share/sasi/html
-  - name: 2nd Container
+  - name: debian
     image: debian
     volumeMounts:
     - name: html
