@@ -1,18 +1,18 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: mc1
+  name: mypod
 spec:
   volumes:
   - name: html
     emptyDir: {}
   containers:
-  - name: 1st
+  - name: 1st Container
     image: nginx
     volumeMounts:
     - name: html
-      mountPath: /usr/share/nginx/html
-  - name: 2nd
+      mountPath: /usr/share/sasi/html
+  - name: 2nd Container
     image: debian
     volumeMounts:
     - name: html
@@ -20,6 +20,6 @@ spec:
     command: ["/bin/sh", "-c"]
     args:
       - while true; do
-          date >> /html/index.html;
+          date >> /html/date-index.html;
           sleep 1;
         done
